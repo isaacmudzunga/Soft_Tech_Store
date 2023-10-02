@@ -1,20 +1,21 @@
-import React from "react";
-import { Container } from 'react-bootstrap';
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import React from 'react'
+import { Container } from 'react-bootstrap'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import HomeScreen from './Screens/HomeScreen'
 
 const App = () => {
   return (
     <>
-    <Header></Header>
-    <main>
-      <Container>
-        <h1>Welcome To SoftTech Store</h1>
-      </Container>
-    </main>
-    <Footer></Footer>
+      <Header/>
+      <main className="py-3">
+        <Container>
+          <HomeScreen/>
+        </Container>
+      </main>
+      <Footer/>
     </>
-  );
+  )
 }
 
-export default App;
+export default App
